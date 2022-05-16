@@ -8,7 +8,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <filesystem>
-#include "../PowerShell/Headers/Version.h"
+#include "../PowerShell/Headers/Headers.h"
 using namespace std;
 
 
