@@ -8,7 +8,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <filesystem>
-#include "../Headers/Main.h"
+#include "../PowerShell/Headers/Version.h"
 using namespace std;
 
 
@@ -31,27 +31,27 @@ int main(){
         if(commands == "help"){
             clears();
             help();
-        }else if(commands == "mkdir"){
+        }else if(commands == "Make-Item"){
             cin >> Dirname;
             mkdir(Dirname.c_str(), 0777);
-        }else if(commands == "mkdir--verbose"){
+        }else if(commands == "Make-Item--verbose"){
             cin >> Dirname;
             cout << "/usr/bin/mkdir: created directory " << Dirname << endl;
             mkdir(Dirname.c_str(), 0777);
-        }else if(commands == "mkdir--help"){
+        }else if(commands == "Make-Item--help"){
             MkdirHelp();
-        }else if(commands == "mkdir--version"){
+        }else if(commands == "Make-Item--version"){
             mkdirversion();
-        }else if(commands == "rmdir"){
+        }else if(commands == "Remove-Item"){
             cin >> Dirname;
             rmdir(Dirname.c_str());
-        }else if(commands == "rmdir--verbose"){
+        }else if(commands == "Remove-Item--verbose"){
             cin >> Dirname;
             cout << "/usr/bin/mkdir: deleted directory " << Dirname << endl;
             mkdir(Dirname.c_str(), 0777);
-        }else if(commands == "rmdir--help"){
+        }else if(commands == "Remove-Item--help"){
             Rmhelp();
-        }else if(commands == "rmdir--version"){
+        }else if(commands == "Remove-Item--version"){
             rmdirversion();
         }else if(commands == "Set-Location"){
             cin >> sDirertory;
@@ -61,7 +61,7 @@ int main(){
             clears();
         }else if(commands == "exit"){
             exit(0);
-        }else if(commands == "ls" || "dir"){
+        }else if(commands == "Get-ChildItem"){
             system(commands.c_str());
         }
     }
