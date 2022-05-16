@@ -1,25 +1,25 @@
 help - shows help menu.
 
-mkdir <directory_name> - makes directory.
+Make-Item <directory_name> - makes directory.
 
-mkdir--verbose <directory_name> - shows making directory.
+Make-Item--verbose <directory_name> - shows making directory.
 
-mkdir--help - shows mkdir help.
+Make-Item--help - shows mkdir help.
 
-mkdir--version - shows version.
+Make-Item--version - shows version.
 
-rmdir <directory_name> - removes directory.
+Remove-Item <directory_name> - removes directory.
 
-rmdir--verbose <directory_name> - shows removing directory.
+Remove-Item--verbose <directory_name> - shows removing directory.
 
-rmdir--help - shows rmdir help.
+Remove-Item--help - shows rmdir help.
 
-rmdir--version - shows version.
+Remove-Item--version - shows version.
 
 Set-Location <directory_name> - changes to specified directory.
 
 cls or clear - clears screen.
 
-ls or dir - shows files.
+Get-ChildItem - shows files.
 
 exit - exits PowerShell.
