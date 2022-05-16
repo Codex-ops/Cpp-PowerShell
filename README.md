@@ -26,3 +26,7 @@ cls or clear - clears screen.
 ls or dir - shows files.
 
 exit - exits PowerShell.
+
+
+# Working on 
+terminal text editor for PowerShell
