@@ -1,12 +1,20 @@
-#Current Commands
-
 help - shows help menu.
 
 mkdir <directory_name> - makes directory.
 
-mkhelp - shows mkdir help.
+mkdir--verbose <directory_name> - shows making directory.
+
+mkdir--help - shows mkdir help.
+
+mkdir--version - shows version.
 
 rmdir <directory_name> - removes directory.
+
+rmdir--verbose <directory_name> - shows removing directory.
+
+rmdir--help - shows rmdir help.
+
+rmdir--version - shows version.
 
 Set-Location <directory_name> - changes to specified directory.
 
