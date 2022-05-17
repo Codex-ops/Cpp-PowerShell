@@ -1,5 +1,32 @@
 using namespace std;
 
+void commandhelp(){
+    cout << "Help commands" << endl;
+    cout << "-------------" << endl;
+    cout << "" << endl;
+    cout << "help - shows help menu." << endl;
+    cout << "Make-Item--help - shows make-item help." << endl;
+    cout << "Remove-Item--help - shows remove-item help." << endl;
+    cout << "" << endl;
+    cout << "Main commands" << endl;
+    cout << "-------------" << endl;
+    cout << "" << endl;
+    cout << "Set-Location - changes to specified directory." << endl;
+    cout << "Clear-Host - clears screen" << endl;
+    cout << "Get-Location - shows current working directory" << endl;
+    cout << "ls/dir - shows files in current directory." << endl;
+    cout << "exit - exits powershell" << endl;
+    cout << "" << endl;
+    cout << "Create-File - makes file." << endl;
+    cout << "Make-Item - makes directory." << endl;
+    cout << "Make-Item--verbose - shows making directory" << endl;
+    cout << "Make-Item--version - shows version." << endl;
+    cout << "" << endl;
+    cout << "Remove-Item - removes directory." << endl;
+    cout << "Remove-Item--verbose - shows removing directory." << endl;
+    cout << "Remove-Item--version - shows version." << endl; 
+}
+
 void welcome(){
     cout << "PowerShell " << __VERSION__"(Beta)" << endl;
     cout << "Copyright (c) Microsoft Corporation." << endl;
