@@ -1,27 +1,3 @@
 help - shows help menu.
 
-Create-File <file_name> - makes file.
-
-Make-Item <directory_name> - makes directory.
-
-Make-Item--verbose <directory_name> - shows making directory.
-
-Make-Item--help - shows make-item help.
-
-Make-Item--version - shows version.
-
-Remove-Item <directory_name> - removes directory.
-
-Remove-Item--verbose <directory_name> - shows removing directory.
-
-Remove-Item--help - shows remove-item help.
-
-Remove-Item--version - shows version.
-
-Set-Location <directory_name> - changes to specified directory.
-
-cls or clear - clears screen.
-
-ls or dir - shows files.
-
-exit - exits PowerShell.
+Get-Help - shows Item help menu.
