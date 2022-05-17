@@ -9,7 +9,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <filesystem>
-#include "../PowerShell/Headers/Version.h"
+#include "../PowerShell/Headers/help.h" 
 using namespace std;
 
 
@@ -21,7 +21,6 @@ int main(){
     string Dirname;
     string sDirertory;
     string commands;
-    char command[50];
     welcome();
     website();
     cout << "Type 'help' to get help." << endl;
@@ -34,6 +33,12 @@ int main(){
         if(commands == "help"){
             clears();
             help();
+        }else if(commands == "Get-Help"){
+            commandhelp();
+        }else if(commands == "Set-Location"){
+            cin >> sDirertory;
+            cin.get();
+            chdir(sDirertory.c_str());
         }else if(commands == "Create-File"){
             cin >> Filename;
             File.open(Filename,ios::out);
@@ -60,16 +65,14 @@ int main(){
             Rmhelp();
         }else if(commands == "Remove-Item--version"){
             rmdirversion();
-        }else if(commands == "Set-Location"){
-            cin >> sDirertory;
-            cin.get();
-            chdir(sDirertory.c_str());
-        }else if(commands == "cls"){
+        }else if(commands == "Get-Location"){
+            cout << "Current working directory " << get_current_dir_name() << endl;
+        }else if(commands == "Clear-Host"){
             clears();
-        }else if(commands == "exit"){
-            exit(0);
         }else if(commands == "ls" || "dir"){
             system(commands.c_str());
+        }else if(commands == "exit"){
+            exit(0);
         }
     }
     return 0;
